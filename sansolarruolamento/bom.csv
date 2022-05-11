@@ -1,0 +1,11 @@
+module name,licenses,repository
+@firebase/app@0.6.9,Apache-2.0,https://github.com/firebase/firebase-js-sdk
+@firebase/messaging@0.6.21,Apache-2.0,https://github.com/firebase/firebase-js-sdk
+@quasar/extras@1.9.3,MIT,https://github.com/quasarframework/quasar
+@sentry/browser@5.20.1,BSD-3-Clause,https://github.com/getsentry/sentry-javascript
+@sentry/integrations@5.20.1,BSD-3-Clause,https://github.com/getsentry/sentry-javascript
+axios@0.19.2,MIT,https://github.com/axios/axios
+core-js@3.6.5,MIT,https://github.com/zloirock/core-js
+portal-vue@2.1.7,MIT,https://github.com/LinusBorg/portal-vue
+quasar@1.12.13,MIT,https://github.com/quasarframework/quasar
+vuelidate@0.7.5,MIT,https://github.com/monterail/vuelidate
