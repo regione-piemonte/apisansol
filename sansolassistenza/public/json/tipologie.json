@@ -1,0 +1,294 @@
+[
+  {
+    "servizio_codice": "ritiroreferti",
+    "categorie": [
+      {
+        "codice": 1,
+        "descrizione": "Referto non trovato",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 2,
+        "descrizione": "Impossibilità a ritirare il referto in quanto il sistema indica che deve essere pagato il ticket",
+        "visibile_anonimo": false
+      },
+      {
+        "codice": 3,
+        "descrizione": "Difficoltà a scaricare immagini di radiologia",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 4,
+        "descrizione": "Non corrispondenza tra Codice Fiscale e Codice identificativo",
+        "visibile_anonimo": true
+      },
+      {
+        "codice":5,
+        "descrizione": "Non corrispondenza tra Codice Fiscale e Tessera Sanitaria",
+        "visibile_anonimo": true
+      }
+    ]
+  },
+  {
+    "servizio_codice": "SCEREV",
+    "categorie": [
+      {
+        "codice": 1,
+        "descrizione": "Scelta medico",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 2,
+        "descrizione": "Scelta pediatra",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 3,
+        "descrizione": "Scelta medico in caso di trasferimento in Piemonte",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 4,
+        "descrizione": "Richiesta medico in caso di domicilio temporaneo diverso dalla residenza (altra città; asl; regione)",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 5,
+        "descrizione": "Rinnovo assistenza temporanea",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 6,
+        "descrizione": "Errori nei dati anagrafici, come correggerli",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 7,
+        "descrizione": "Revoca e/o emissione documento di revoca",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 8,
+        "descrizione": "Informazioni sulla presa in carico della richiesta dalla ASL",
+        "visibile_anonimo": true
+      }
+    ]
+
+  },
+  {
+    "servizio_codice": "ESENRED",
+    "categorie": [
+      {
+        "codice": 1,
+        "descrizione": "Informazioni su inserimento autocertificazione esenzione",
+        "visibile_anonimo": true
+      }
+    ]
+
+  },
+  {
+    "servizio_codice": "SIRVA",
+    "categorie": [
+      {
+        "codice": 1,
+        "descrizione": "Elenco vaccini effettuati",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 2,
+        "descrizione": "Vaccini effettuati presso altra Regione",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 3,
+        "descrizione": "Possibilità di gestire la prenotazione di un vaccino",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 4,
+        "descrizione": "Mancanza vaccini effettuati",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 5,
+        "descrizione": "Visualizzazione/stampa Vaccinazione COVID-19",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 6,
+        "descrizione": "Vaccini effettuati presso altra Regione visibii nel Fascicolo Sanitario Elettronico",
+        "visibile_anonimo": true
+      }
+    ]
+  },
+  {
+    "servizio_codice": "CONSENSI",
+    "categorie": [
+      {
+        "codice": 1,
+        "descrizione": "Notifica con variazione consensi: richiesta verifica",
+        "visibile_anonimo": true
+      }
+    ]
+  },
+  {
+    "servizio_codice": "SOLCOVID",
+    "categorie": []
+  },
+  {
+    "servizio_codice": "promem",
+    "categorie": [
+      {
+        "codice": 1,
+        "descrizione": "Informazioni per scarico ricette figli minorenni",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 2,
+        "descrizione": "Ricetta mancante",
+        "visibile_anonimo": true
+      }
+    ]
+  },
+  {
+    "servizio_codice": "deleghe",
+    "categorie": [
+      {
+        "codice": 1,
+        "descrizione": "Informazioni per deleghe",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 2,
+        "descrizione": "Inserimento deleghe per minori",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 3,
+        "descrizione": "Conferma del secondo genitore (per inserimento delega minori)",
+        "visibile_anonimo": true
+      }
+    ]
+
+  },
+  {
+    "servizio_codice": "BUONO_CELIACHIA",
+    "categorie": [
+      {
+        "codice": 1,
+        "descrizione": "Rinvio PIN",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 2,
+        "descrizione": "Abilitazione tessera sanitaria in caso di rinnovo",
+        "visibile_anonimo": true
+      }
+    ]
+
+  },
+  {
+    "servizio_codice": "RISCRE",
+    "categorie": []
+
+  },
+  {
+    "servizio_codice": "RESERVATIONS",
+    "categorie": []
+  },
+  {
+    "servizio_codice": "TROVAUN",
+    "categorie": []
+
+  },
+  {
+    "servizio_codice": "FFE",
+    "categorie": []
+
+  },
+  {
+    "servizio_codice": "FSE",
+    "categorie": [
+      {
+        "codice": 1,
+        "descrizione": "Informazioni su FSE (Fascicolo sanitario elettronico) e sui documenti presenti",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 2,
+        "descrizione": "Come apro il FSE (Fascicolo Sanitario Elettronico)? Come lo consulto? Dove lo trovo?",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 3,
+        "descrizione": "Documenti pregressi all'interno del FSE (Fascicolo Sanitario Elettronico)",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 4,
+        "descrizione": "Informazioni su FSE (Fascicolo Sanitario Elettronico)  per minori",
+        "visibile_anonimo": true
+      },
+      {
+        "codice":5,
+        "descrizione": "Impossibilità a trovare il certificato vaccinale sul proprio FSE (Fascicolo Sanitario Elettronico)",
+        "visibile_anonimo": true
+      },
+      {
+        "codice":6,
+        "descrizione": "Trasferimento in Regione Piemonte e accesso al FSE (Fascicolo sanitario elettronico)",
+        "visibile_anonimo": true
+      }
+    ]
+  },
+  {
+    "servizio_codice": "PTW",
+    "categorie": [
+      {
+        "codice": 1,
+        "descrizione": "Impossibilità a pagare il ticket sanitario",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 2,
+        "descrizione": "Impossibilità ad avere la ricevuta di pagamento",
+        "visibile_anonimo": true
+      }
+    ]
+
+  },
+  {
+    "servizio_codice": "ESENPAT",
+    "categorie": []
+
+  },
+  {
+    "servizio_codice": "TAC",
+    "categorie": []
+
+  },
+  {
+    "servizio_codice": "HOME",
+    "categorie": [
+      {
+        "codice": 1,
+        "descrizione": "Difficoltà generiche di accesso ai servizi",
+        "visibile_anonimo": true
+      },
+      {
+        "codice": 2,
+        "descrizione": "Difficoltà di accesso al Fascicolo Sanitario Elettronico",
+        "visibile_anonimo": true
+      }
+    ]
+
+  },
+
+  {
+    "servizio_codice": "PROFILO_UTENTE_OLD",
+    "categorie": []
+
+  }
+
+
+]
