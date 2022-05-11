@@ -1,0 +1,191 @@
+/*
+ * SPDX-License-Identifier: EUPL-1.2
+ * Copyright Regione Piemonte - 2022
+ */
+
+/**
+ * @description
+ * Qui definiamo la struttura delle routes del progetto.
+ *
+ * 1. Importiamo le routes dei singoli acceleratori
+ * 2. GLi diamo la struttura che vogliamo
+ */
+import * as GLOBAL_ROUTES from './global';
+import * as ENROLLMENT_ROUTES from "./enrollment";
+import * as ONLINE_REPORTS_ROUTES from "./online-reports";
+import * as HEALTH_PAYMENTS_ROUTES from "./health-payments";
+import * as DELEGATIONS_ROUTES from "./delegations";
+import * as INCOME_EXEMPTION_ROUTES from './income-exemption';
+import * as OLD_SERVICES_ROUTES from "./old-services";
+import * as PRESCRIPTIONS_ROUTES from "./prescriptions";
+import * as CONSENTS_ROUTES from './consents';
+import * as VACCINATIONS_ROUTES from './vaccinations';
+import * as PATHOLOGY_EXEMPTION_ROUTES from './pathology-exemption';
+import * as RESERVATIONS_ROUTES from './reservations';
+import * as DEV_ROUTES from "./dev";
+import * as ERROR_ROUTES from './errors';
+import * as CHANGE_DOCTOR_ROUTES from './change-doctor'
+import * as APPS_DETACHED from './apps-detached'
+import * as FFE_ROUTES from "./ffe";
+import * as FSE_ROUTES from "./fse";
+import * as COVID_ROUTES from "./covid";
+import {DIGITAL_TRANSFORMATION} from "./digital-transformation";
+
+export const LAYOUT_APP = {
+  path: '/',
+  component: () => import('layouts/LayoutApp'),
+  meta: {
+    isPublic: true,
+    analyticsIgnore: true
+  },
+  children: [
+    // GLOBAL ROUTES
+    GLOBAL_ROUTES.APP,
+    GLOBAL_ROUTES.USER_PROFILE,
+    GLOBAL_ROUTES.POLICY,
+    GLOBAL_ROUTES.USER_NOTIFICATION_PREFERENCES,
+    GLOBAL_ROUTES.USER_NOTIFICATION_DETAIL,
+    GLOBAL_ROUTES.USER_NOTIFICATIONS,
+    GLOBAL_ROUTES.SERVICE_RATING,
+    GLOBAL_ROUTES.CONTACTS_HELP,
+    GLOBAL_ROUTES.USER_CONTACTS,
+    GLOBAL_ROUTES.USER_CONSENTS_P,
+    GLOBAL_ROUTES.USER_CONSENT_DETAIL_P,
+    GLOBAL_ROUTES.USER_CONSENT_SUCCESS_P,
+    GLOBAL_ROUTES.COVID19,
+    GLOBAL_ROUTES.COOKIE_POLICY,
+
+    // ONLINE REPORTS ROUTES
+    // ONLINE_REPORTS_ROUTES.APP,
+    // HEALTH PAYMENTS ROUTES
+    HEALTH_PAYMENTS_ROUTES.APP,
+    // DELEGATIONS ROUTES
+    // DELEGATIONS_ROUTES.APP,
+    // INCOME EXEMPTION ROUTES
+    INCOME_EXEMPTION_ROUTES.APP,
+    // PRESCRIPTIONS ROUTES
+    PRESCRIPTIONS_ROUTES.APP,
+    // ENROLLMENT ROUTES
+    ENROLLMENT_ROUTES.FLOW,
+    // CONSENSI routes
+    CONSENTS_ROUTES.APP,
+    // vaccinazioni routes
+    // VACCINATIONS_ROUTES.APP,
+    // PATHOLOGY EXEMPTION ROUTES
+    PATHOLOGY_EXEMPTION_ROUTES.APP,
+    // RESERVATIONS ROUTES
+    RESERVATIONS_ROUTES.APP,
+    // CHANGE DOCTOR ROUTES
+    CHANGE_DOCTOR_ROUTES.APP,
+    // FFE ROUTES
+    // FFE_ROUTES.DISPATCHER,
+    // FSE ROUTES
+    // FSE_ROUTES.DISPATCHER,
+  ]
+};
+
+export const LAYOUT_APP_COVID = {
+  path: '/',
+  component: () => import('layouts/LayoutAppCovid'),
+  meta: {
+    isPublic: true,
+    analyticsIgnore: true
+  },
+  children: [
+    // COVID ROUTES
+    // COVID_ROUTES.APP,
+  ]
+};
+
+export const LAYOUT_EMPTY = {
+  path: '/',
+  component: () => import('layouts/LayoutEmpty'),
+  meta: {
+    isPublic: true,
+    analyticsIgnore: true
+  },
+  children: [
+    // OTHER ROUTES
+    GLOBAL_ROUTES.USER_CONTACTS_FLOW,
+    GLOBAL_ROUTES.USER_CONTACTS_FLOW_SUCCESS,
+    GLOBAL_ROUTES.LOGOUT,
+
+    // OLD SERVICES
+    OLD_SERVICES_ROUTES.MEDICAL_RESERVATIONS_APP,
+    OLD_SERVICES_ROUTES.FSE_APP,
+    OLD_SERVICES_ROUTES.FFE_APP,
+    OLD_SERVICES_ROUTES.DOCTOR_CHANGE_APP,
+    OLD_SERVICES_ROUTES.TICKET_EXEMPTION_APP,
+    OLD_SERVICES_ROUTES.FEMALE_SCREENING_APP,
+    OLD_SERVICES_ROUTES.SURVEY_NOTEPAD_APP,
+    OLD_SERVICES_ROUTES.YOUR_DOCUMENTS_APP,
+    OLD_SERVICES_ROUTES.FINDER_APP,
+    APPS_DETACHED.FEMALE_SCREENING_APP,
+    APPS_DETACHED.VACCINATIONS_APP,
+    APPS_DETACHED.DEVELOPERS_APP,
+    APPS_DETACHED.FINDER_APP,
+    APPS_DETACHED.HOME_APP,
+    APPS_DETACHED.SURVEY_NOTEPAD_APP,
+    APPS_DETACHED.FFE_APP,
+    APPS_DETACHED.CELIAC_DISEASE_VOUCHER,
+    APPS_DETACHED.ASSISTANCE_APP,
+    DIGITAL_TRANSFORMATION
+  ]
+};
+
+
+export const LAYOUT_DEV = {
+  path: '/',
+  component: () => import('layouts/LayoutDev'),
+  meta: {
+    isPublic: true,
+    analyticsIgnore: true
+  },
+  children: [
+    // DEV ROUTES
+    DEV_ROUTES.APP,
+  ]
+};
+
+
+export default [
+  LAYOUT_APP,
+  // LAYOUT_APP_COVID,
+  LAYOUT_EMPTY,
+  LAYOUT_DEV,
+
+  ERROR_ROUTES.ERROR_BOOTSTRAP,
+  ERROR_ROUTES.ERROR_500,
+  // Always leave this as last one
+  // 404 Page not found handler
+  ERROR_ROUTES.ERROR_404,
+  ERROR_ROUTES.MAINTENANCE,
+]
+
+
+export const ROUTES_BOOK = {
+  LAYOUT_APP,
+  LAYOUT_APP_COVID,
+  LAYOUT_EMPTY,
+  LAYOUT_DEV,
+  GLOBAL: GLOBAL_ROUTES,
+  ENROLLMENT: ENROLLMENT_ROUTES,
+  ONLINE_REPORTS: ONLINE_REPORTS_ROUTES,
+  HEALTH_PAYMENTS: HEALTH_PAYMENTS_ROUTES,
+  DELEGATIONS: DELEGATIONS_ROUTES,
+  INCOME_EXEMPTION: INCOME_EXEMPTION_ROUTES,
+  OLD_SERVICES: OLD_SERVICES_ROUTES,
+  PRESCRIPTIONS: PRESCRIPTIONS_ROUTES,
+  DEV: DEV_ROUTES,
+  ERRORS: ERROR_ROUTES,
+  CONSENTS: CONSENTS_ROUTES,
+  VACCINATIONS: VACCINATIONS_ROUTES,
+  PATHOLOGY_EXEMPTION: PATHOLOGY_EXEMPTION_ROUTES,
+  RESERVATIONS: RESERVATIONS_ROUTES,
+  CHANGE_DOCTOR: CHANGE_DOCTOR_ROUTES,
+  APPS_DETACHED: APPS_DETACHED,
+  FFE: FFE_ROUTES,
+  FSE: FSE_ROUTES,
+  COVID: COVID_ROUTES,
+  DIGITAL_TRANSFORMATION: DIGITAL_TRANSFORMATION
+};
