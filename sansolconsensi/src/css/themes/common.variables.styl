@@ -1,0 +1,168 @@
+/*
+ * SPDX-License-Identifier: EUPL-1.2
+ * Copyright Regione Piemonte - 2022
+ */
+
+// App Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Stylus variables found in Quasar's source Stylus files. Setting
+// variables before Quasar's Stylus will use these variables rather than
+// Quasar's default Stylus variable values. Stylus variables specific
+// to the themes belong in either the variables.ios.styl or variables.mat.styl files.
+
+// Check documentation for full list of Quasar variables
+// https://quasar-framework.org/components/stylus-variables.html
+
+// App Shared Color Variables
+// --------------------------------------------------
+// It's highly recommended to change the default colors
+// to match your app's branding.
+
+//$primary   = #027be3
+$primary = #006cb4
+//$secondary = #26A69A
+$secondary = #0381d6
+$tertiary = #555
+
+$neutral = #E0E1E2
+$positive = #a8df32
+$negative = #de3a33
+$info = #9cc9dc
+$warning = #ea7f21
+$pink-15 = #e634a7
+
+// CUSTOM BRAND COLORS
+$csi-brand-colors = {
+  background: #f0f3f8,
+  text: #000000,
+  text-faded: #1a1b20,
+  toolbar-app: #006cb4,
+  toolbar-service: #0381d6,
+  navigation-buttons: #005ca9,
+  background-card: #ffffff,
+  toolbar-card: #eeeeee,
+  toolbar-card-warning: #f1dddd,
+}
+
+
+//$body-background = #f5f5f5 // gray-2
+$body-background = $csi-brand-colors.background
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+$typography-font-family = 'Open Sans', '-apple-system', 'Helvetica Neue', Helvetica, Arial, sans-serif
+
+$text-weights ?= {
+  thin: 300, // Open Sans non ha "thin" perciò lo mettiamo uguale a light
+  light: 300,
+  regular: 400,
+  medium: 600,
+  bold: 700,
+  bolder: 800
+}
+
+$button-font-weight = 600
+$toolbar-title-font-weight = 600
+$tabs-font-weight = 600
+
+$headings ?= {
+  // <h1>
+  display-4: {
+    size: 22px,
+    weight: $text-weights.bold,
+    opacity: .54,
+    line-height: 1.2em,
+    letter-spacing: -.04em
+  },
+  // <h2>
+  display-3: {
+    size: 20px,
+    weight: $text-weights.bold,
+    opacity: .54,
+    line-height: 1.29em,
+    letter-spacing: -.02em
+  },
+  // <h3>
+  display-2: {
+    size: 20px,
+    weight: $text-weights.regular,
+    opacity: .54,
+    line-height: 1.29em,
+    letter-spacing: normal
+  },
+  // <h4>
+  display-1: {
+    size: 18px,
+    weight: $text-weights.regular,
+    opacity: .54,
+    line-height: 1.27em,
+    letter-spacing: normal
+  },
+  // <h5>
+  headline: {
+    size: 18px,
+    weight: $text-weights.bold,
+    opacity: .87
+    line-height: 1.27em,
+    letter-spacing: normal
+  },
+  // <h6>
+  title: {
+    size: 16px,
+    weight: $text-weights.regular,
+    opacity: .87
+    line-height: 1.5em,
+    letter-spacing: .02em
+  },
+  // Non presente nel design system
+  subheading: {
+    size: 16px,
+    weight: $text-weights.regular,
+    opacity: .87
+  },
+  // Non presente nel design system
+  body-2: {
+    size: 14px,
+    weight: $text-weights.bold,
+    opacity: .87
+  },
+  // Non presente nel design system
+  body-1: {
+    size: 14px,
+    weight: $text-weights.regular,
+    opacity: .87
+  },
+  // <h7>
+  caption: {
+    size: 12px,
+    weight: 400,
+    opacity: .54,
+    line-height: 1.5em,
+  }
+}
+
+// Diciamo a quasar che non vogliamo applicare agli headings gli stessi stili applicati a $headings
+$h-tags ?= {}
+// Ed ora creiamo una nostra mappa per gli stili della tipografia
+$csi-typography-map = {
+  h1: $headings.display-4,
+  h2: $headings.display-3,
+  h3: $headings.display-2,
+  h4: $headings.display-1,
+  h5: $headings.headline,
+  h6: $headings.title,
+  text: $headings.display-1,
+  text--bold: $headings.headline,
+  text--sm: $headings.title,
+  text--xs: $headings.caption,
+}
+
+// Quanto vogliamo grandi i font?
+$icon-size-xs = 16px;
+$icon-size-sm = 24px;
+$icon-size-md = 32px;
+$icon-size-lg = 48px;
+$icon-size-xl = 56px;
+
+//colore per card attive
+$csi-active-card = #73D7FF;

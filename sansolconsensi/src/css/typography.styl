@@ -1,0 +1,41 @@
+/*
+ * SPDX-License-Identifier: EUPL-1.2
+ * Copyright Regione Piemonte - 2022
+ */
+
+@require '~variables'
+
+
+// Cicliamo su tutti gli heading per renderli di default styless ed essere semplicemente dei tag semantici
+for $h in h1 h2 h3 h4 h5 h6
+  {$h}
+    margin: 0
+    padding: 0
+    font-size: 1rem
+    font-weight: normal
+
+
+// Creiamo le nostre classi di tipografia
+// Fortunatamente quasar sembrerebbe non usare internamente le proprie classi
+// perciò dovrebbe trattarsi di una ridondanza utile
+
+for $class, $styles in $csi-typography-map
+  .csi-{$class}
+    // Purtroppo al momento non è possibile estendere le classi interne di Quasar
+    // @see https://github.com/quasarframework/quasar/issues/2131
+    // Per questo motivo duplichiamo il codice che quasar stesso usa per generare gli stili
+    // @extend .q-display-4
+    font-size: $styles.size
+    if !match('text', $class)
+      font-weight: $styles.weight
+    if $styles.line-height
+      line-height: $styles.line-height
+    if $styles.letter-spacing
+      letter-spacing: $styles.letter-spacing
+
+code, kbd
+  background-color $grey-9
+  color $blue-2
+  border-radius 6px
+  padding 1px 8px
+  font-weight bold
