@@ -1,0 +1,80 @@
+# This repository adheres to the publiccode.yml standard by including this 
+# metadata file that makes public software easily discoverable.
+# More info at https://github.com/italia/publiccode.yml
+
+publiccodeYmlVersion: '0.2'
+categories:
+  - erp
+description:
+  it:
+    features:
+      - Ritiro e consultazione documenti
+      - Pagamenti Sanitari
+      - Ricette Dematerializzate
+      - Arruolamento al Fascicolo Sanitario
+      - Taccuino
+      - Trova un
+      - Prevenzione Serna
+      - Farmacia abituale
+      - Estratto conto
+      - Esenzioni per Reddito
+      - Esenzioni per Patologia
+      - Gestione Deleghe
+      - Gestione Consensi
+      - Profilo e gestione notifiche
+    genericName: FE Servizi Salute Regione Piemonte
+    longDescription: |
+      Rappresenta il Front-End dei servizi sanitari rivolti ai cittadini della
+      Regione Piemonte. 
+
+
+      Nasce come  punto di accesso unico per consultare la propria storia
+      clinica e per gestire i documenti e i dati che costituiscono il Fascicolo
+      Sanitario Elettronico.
+
+
+      Realizzata in tecnica _PWA_, nativamente adattabile ai dispositivi sia
+      mobili che desktop.
+
+
+      Contiene i servizi per: effettuare pagamenti sanitari, ritirare un referto
+      o consultare i documenti sanitari presenti nel proprio fascicolo
+      sanitario, visualizzare le proprie vaccinazioni, cambiare o scegliere il
+      proprio medico di famiglia, scaricare le proprie ricette dematerializzate,
+      visualizzare il proprio buono celiachia ecc.. 
+    shortDescription: |-
+      Rappresenta il Front-End dei servizi sanitari rivolti ai cittadini della
+      Regione Piemonte.   Nasce come  punto di accesso unico per consultare la
+      prop
+developmentStatus: stable
+it:
+  conforme:
+    gdpr: false
+    lineeGuidaDesign: false
+    misureMinimeSicurezza: true
+    modelloInteroperabilita: false
+  countryExtensionVersion: '0.2'
+  piattaforme:
+    anpr: false
+    cie: true
+    pagopa: false
+    spid: true
+  riuso:
+    codiceIPA: r_piemon
+legal:
+  license: EUPL-1.2
+localisation:
+  availableLanguages:
+    - it
+  localisationReady: false
+maintenance:
+  contacts:
+    - email: giovanni.pennone@csi.it
+      name: Giovanni Pennone
+  type: internal
+name: FE Servizi Salute Regione Piemonte
+platforms:
+  - web
+releaseDate: '2022-05-11'
+softwareType: standalone/iot
+url: 'https://github.com/regione-piemonte/sansol'
