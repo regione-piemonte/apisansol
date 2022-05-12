@@ -1,0 +1,40 @@
+/*
+ * SPDX-License-Identifier: EUPL-1.2
+ * Copyright Regione Piemonte - 2022
+ */
+
+for value in range(100, 300, 50)
+  .csi-animation-duration--{value}
+    animation-duration value ms
+
+
+@-webkit-keyframes pulse
+  0%
+    -webkit-transform: scale(1, 1)
+
+  25%
+    -webkit-transform: scale(1.2, 1.2)
+
+  50%
+    -webkit-transform: scale(1, 1)
+
+  75%
+    -webkit-transform: scale(1.2, 1.2)
+
+  100%
+    -webkit-transform: scale(1, 1)
+@keyframes pulse
+  0%
+    transform: scale(1, 1)
+
+  25%
+    transform: scale(1.2, 1.2)
+
+  50%
+    transform: scale(1, 1)
+
+  75%
+    transform: scale(1.2, 1.2)
+
+  100%
+    transform: scale(1, 1)
