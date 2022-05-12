@@ -1,0 +1,37 @@
+/*!
+ / SPDX-License-Identifier: EUPL-1.2
+ / Copyright Regione Piemonte - 2022
+ /
+
+// app global css in Sass form
+
+// Utile solo per far caricare le variabili
+#____useless
+  color: $primary
+
+// ALTRO
+// ---------------------------------------------------------------------------------------------------------------------
+@import "./sizes"
+@import "./helpers"
+@import "./html-tags"
+@import "./quasar-overrides"
+
+
+.tac-table-grid-item
+  background-color: $grey-1
+
+.tac-table-grid-item__field-label
+  font-size: map-get($caption, 'size')
+  line-height: map-get($caption, 'line-height')
+  letter-spacing: map-get($caption, 'letter-spacing')
+  font-weight: map-get($text-weights,'bold')
+
+
+.csi-container
+  margin: auto
+  max-width: 991px !important
+
+
+.tac-input--text-right
+  input
+    text-align: right
