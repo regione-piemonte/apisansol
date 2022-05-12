@@ -1,0 +1,100 @@
+/*
+ * SPDX-License-Identifier: EUPL-1.2
+ * Copyright Regione Piemonte - 2022
+ */
+
+// QUASAR OVERRIDES
+// ---------------------------------------------------------------------------------------------------------------------
+.q-stepper,
+.q-stepper-header
+  box-shadow none
+
+.q-tabs-head,
+.q-tabs-bar,
+.q-tab
+  background transparent !important
+  text-transform: initial;
+  color $grey-9 !important
+
+
+  .q-tab-label {
+     opacity: 1  !important;
+  }
+
+//.q-tabs-head,
+.q-tabs-bar,
+//.q-tab,
+.q-router-link-active
+  color: #006cb4 !important;
+  .active
+    color: #006cb4 !important;
+
+.q-card
+  background white
+
+// I campi disbalitati hanno un'opcaità più alta per renderli più accessibili
+.disabled, [disabled]
+  opacity 0.9 !important
+
+// Modifichiamo il colore della label e degli helper così da renderli più accessibili
+.q-field
+  .q-if-label
+  .q-field-helper
+    color: $csi-brand-colors.text-faded
+
+.q-field[required]
+  // Gestiamo i campi obbilgatori, cioè <q-field required></q-field> aggiungendo un * prima della label.
+  .q-if-label-inner::before
+    content '*'
+    display inline-block
+    margin-right 2px
+
+
+// Senza questa istruzione la multiselect di quasar non tronca il testo in caso di label selezionata troppo lunga
+.q-select
+  .q-if-inner
+    & > .row
+      width 100%
+
+.fse-enrollment
+  .q-alert
+    border-left-width 0px
+    &.bg-warning
+      background lighten($yellow-2, 30%) !important
+      border-left-color: $yellow-2
+
+
+.q-alert
+  color black !important
+  border-left-width 6px
+  border-left-style solid
+
+  .q-alert-side
+    background-color initial
+    align-items start
+    padding-right 0
+
+  &.bg-positive
+    background lighten($positive, 40%) !important
+    border-left-color: $positive
+
+  &.bg-warning
+    background lighten($warning, 30%) !important
+    border-left-color: $warning
+
+  &.bg-negative
+    background lighten($negative, 30%) !important
+    border-left-color: $negative
+
+  &.bg-info
+    background lighten($info, 30%) !important
+    border-left-color: $info
+
+  &.bg-enrollment
+    background lighten($yellow-2, 30%) !important
+    border-left-color: $yellow-2
+
+.q-title
+  font-size 22px
+  font-weight bold
+  line-height 1.5em

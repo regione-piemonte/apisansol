@@ -1,0 +1,108 @@
+/*
+ * SPDX-License-Identifier: EUPL-1.2
+ * Copyright Regione Piemonte - 2022
+ */
+
+@require '~variables'
+
+// HELPER CLASSES
+// ---------------------------------------------------------------------------------------------------------------------
+.scrolling-wrapper {
+  overflow-x: none;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+  .card {
+    display: inline-block;
+    border: #979797;
+    border-style: solid;
+    border-width: thin
+    border-radius: 3px
+    font-size: 14px
+
+
+  }
+
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  // IE10+ CSS here
+  .scrolling-wrapper {
+    overflow-x: none;
+    overflow-y: hidden;
+    white-space: nowrap;
+
+    .card {
+      display: inline;
+      zoom: 1;
+      border-style: none;
+
+
+    }
+  }
+}
+.scrolling-wrapper {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+.csi-step-no-padding
+  .q-stepper-step-inner
+    padding 0
+
+.emoji-icon
+  color: transparent;
+  background-color: $faded;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+.csi-icon--xs
+  font-size $icon-size-xs
+
+.csi-icon--sm
+  font-size $icon-size-sm
+
+.csi-icon--md
+  font-size $icon-size-md
+
+.csi-icon--lg
+  font-size $icon-size-lg
+
+.csi-icon--xl
+  font-size $icon-size-xl
+
+.csi-svg-icon--xs
+  width: $icon-size-xs
+  height: $icon-size-xs
+
+.csi-svg-icon--sm
+  width: $icon-size-sm
+  height: $icon-size-sm
+
+.csi-svg-icon--md
+  width: $icon-size-md
+  height: $icon-size-md
+
+.csi-svg-icon--lg
+  width: $icon-size-lg
+  height: $icon-size-lg
+
+.csi-svg-icon--xl
+  width: $icon-size-xl
+  height: $icon-size-xl
+
+.csi-group-card > *:not(:first-of-type)
+  margin-top: $spaces.md.y
+
+.csi-text-strike
+  text-decoration line-through
+
+a.csi-link-seamless
+  color: inherit
+  text-decoration: none
+
+.text-pink-15 {
+  color: $pink-15;
+}
+.bg-pink-15 {
+  background:  $pink-15;
+}

@@ -1,0 +1,53 @@
+/*
+ * SPDX-License-Identifier: EUPL-1.2
+ * Copyright Regione Piemonte - 2022
+ */
+
+// app global css
+@require '~variables'
+@require 'theme'
+@require 'typography'
+@require 'helpers'
+@require 'transitions'
+@require 'html-tags'
+@require 'overrides'
+@require 'components/*'
+
+
+.q-layout-page
+  min-height 60vh !important
+
+
+.csi-app-logo
+  width 100%
+  max-width 250px
+  height auto
+
+a.csi-link
+  color: $primary
+  font-weight: bold
+  text-decoration: none
+  transition: color .4s ease-in-out
+
+  &:hover
+    color: $pink-8
+
+a.csi-link--light
+  color: #FFFFFF
+
+  &:hover
+    color: $pink-3
+
+
+// RESPONSIVE
+// ---------------------------------------------------------------------------------------------------------------------
+@media (min-width: $breakpoint-sm)
+  .q-layout-page, .csi-container
+    max-width $breakpoint-sm
+    margin auto
+
+
+@media (min-width: $breakpoint-md)
+  .q-layout-page, .csi-container
+    max-width $breakpoint-md
+    margin auto
