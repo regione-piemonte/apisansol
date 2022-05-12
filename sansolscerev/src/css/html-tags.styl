@@ -1,0 +1,48 @@
+/*
+ * SPDX-License-Identifier: EUPL-1.2
+ * Copyright Regione Piemonte - 2022
+ */
+
+isE
+blockquote
+  @extend .csi-text
+  font-style italic
+  border-left: 8px solid $primary;
+
+ul
+ol
+  list-style none
+  padding-left 24px
+  //padding-left 0
+  margin 0
+
+  //& ul
+  //& ol
+  //  padding-left 16px
+
+  li
+    margin 8px 0
+    position relative
+
+  li::before
+    color $primary
+    display inline-block
+
+ul
+  li::before
+    content "\2022" // \2022 is the CSS Code/unicode for a bullet
+    font-weight bold
+    position absolute
+    transform translateX(-200%)
+    //margin-right 12px
+
+ol
+  counter-reset ordered-list-item
+
+  li::before
+    counter-increment: ordered-list-item // Increment the counter "ordered-list-item" by 1
+    content counter(ordered-list-item) "."
+    font-weight normal
+    //margin-right 6px
+    position absolute
+    transform translateX(-150%)
