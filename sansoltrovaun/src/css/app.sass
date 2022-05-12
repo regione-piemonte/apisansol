@@ -1,0 +1,54 @@
+/*!
+ / SPDX-License-Identifier: EUPL-1.2
+ / Copyright Regione Piemonte - 2022
+ /
+
+// app global css in Sass form
+
+// Utile solo per far caricare le variabili
+#____useless
+  color: $primary
+
+// ALTRO
+// ---------------------------------------------------------------------------------------------------------------------
+@import "./sizes"
+@import "./helpers"
+@import "./html-tags"
+@import "./quasar-overrides"
+
+
+
+
+.lms-trova-un-card
+  color: #000
+  cursor: pointer
+  border: 2px solid #fff
+  &:hover
+    border: 2px solid rgba($primary-active-color, 0.6)
+    box-shadow: 0px 0px 5px  rgba($primary-active-color, 0.5)
+    -webkit-box-shadow:   0px 0px 5px  rgba($primary-active-color, 0.5)
+    -moz-box-shadow:   0px 0px 5px  rgba($primary-active-color, 0.5)
+  &.active, &.home:hover
+    margin: 0
+    border: 2px solid $primary-active-color
+    box-shadow: 0px 0px 10px $primary-active-color
+    -webkit-box-shadow:   0px 0px 10px $primary-active-color
+    -moz-box-shadow:   0px 0px 10px $primary-active-color
+
+.card-link
+  a
+    color: #000
+    text-decoration: none
+    overflow-wrap: break-word
+
+.route-item-label
+  &:hover, &:focus
+    .q-focus-helper
+      background: $primary-active-color !important
+
+.note-info-icon
+  color: #acacac
+  margin-top: -8px
+
+.minWidthCard
+  min-width: 700px !important
