@@ -1,0 +1,167 @@
+<!--
+  ~ SPDX-License-Identifier: EUPL-1.2
+  ~ Copyright Regione Piemonte - 2022
+  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Logout | Salute Piemonte</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons" rel="stylesheet"
+        type="text/css">
+  <link href="https://cdn.jsdelivr.net/npm/quasar@1.18.6/dist/quasar.min.css" rel="stylesheet" type="text/css">
+
+  <style>
+    .csi-logout-spinner {
+      transform: scale(0.7, 0.7);
+    }
+
+    .lms-layout-header__toolbar__title {
+      max-width: 250px;
+    }
+
+    .lms-layout-footer__links {
+      background-color: #0d47a1;
+      color: #FFF;
+      padding: 0 16px 32px 16px;
+      text-align: center;
+    }
+
+    .lms-layout-footer__logo-csi{
+      max-width: 180px;
+      height: auto;
+    }
+  </style>
+</head>
+
+<body>
+<div id="app">
+  <q-layout>
+    <!-- HEADER -->
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+    <q-header>
+      <q-toolbar>
+        <img
+          src="https://sansol.isan.csi.it/statics/la-mia-salute/immagini/logo-la-mia-salute-bianco.svg"
+          alt="Logo Salute Piemonte "
+          class="full-width vertical-middle q-ml-md lms-layout-header__toolbar__title"
+        />
+        <q-space/>
+      </q-toolbar>
+    </q-header>
+
+
+    <!-- PAGINA -->
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+    <q-page-container>
+      <q-page padding>
+        <div class="absolute-center text-center full-width q-px-md">
+          <div class="text-center ">
+            <img
+              src="https://sansol.isan.csi.it/statics/la-mia-salute/immagini/logout-spinner.gif"
+              alt="A presto"
+              class="responsive csi-logout-spinner"
+            />
+          </div>
+
+          <h1 class="text-h3 text-primary q-mt-xl">
+            Stai per essere disconnesso
+          </h1>
+        </div>
+
+        <iframe
+          v-for="url in logoutUrlList"
+          :key="url"
+          :src="url"
+          frameborder="0"
+          height="0"
+          width="0"
+          @load="onLoad($event, url)"
+          @error="onLog($event, url, 'onError')"
+          @abort="onLog($event, url, 'onAbort')"
+          @cancel="onLog($event, url, 'onCancel')"
+          @change="onLog($event, url, 'onChange')"
+          @ended="onLog($event, url, 'onEnded')"
+          @loadstart="onLog($event, url, 'onLoadStart')"
+          @stalled="onLog($event, url, 'onStalled')"
+          @suspend="onLog($event, url, 'onSuspend')"
+          @waiting="onLog($event, url, 'onWaiting')"
+        ></iframe>
+      </q-page>
+    </q-page-container>
+
+
+    <!-- FOOTER -->
+    <!-- ------------------------------------------------------------------------------------------------------- -->
+    <q-footer>
+      <div class="bg-blue-10 q-px-sm">
+        <div
+          class="lms-layout-footer__links row justify-between items-center q-col-gutter-y-xl no-margin"
+        >
+          <div class="col-12 col-sm-auto">
+            <img
+              src="https://sansol.isan.csi.it/statics/la-mia-salute/immagini/logo-piemonte-tu.svg"
+              alt="Logo Piemonte Tu"
+              class="responsive"
+              style="max-width: 180px;"
+            />
+          </div>
+
+          <div class="col-12 col-sm-auto">
+            <img
+              src="https://sansol.isan.csi.it/statics/la-mia-salute/immagini/logo-csi.svg"
+              alt="Logo CSI"
+              class="lms-layout-footer__logo-csi"
+            />
+          </div>
+        </div>
+      </div>
+    </q-footer>
+  </q-layout>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@^2.0.0/dist/vue.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/quasar@1.18.6/dist/quasar.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/quasar@1.18.6/dist/lang/it.umd.min.js"></script>
+
+<script>
+  Quasar.lang.set(Quasar.lang.it);
+
+  const app = new Vue({
+    el: "#app",
+    data() {
+      return {
+        logoutUrlList: [],
+        messageList: []
+      };
+    },
+    created() {
+      this.logoutUrlList = [
+        "https://www.piemontetu.it/piemtu_443s_liv3_sispliv2spid_gasprp_salute/logout.do",
+        "https://cup.isan.csi.it/c/portal/logout",
+        "https://sansol.isan.csi.it/api/bff/logout",
+        "https://www.ilpiemontetivaccina.it/preadesione-api/auth/bff/api/logout"
+      ];
+
+      // Dopo 2 secondi carichiamo la nostra pagina di logout
+      setTimeout(() => {
+        window.location.assign("https://sansol.isan.csi.it/api/bff/logout");
+      }, 2000);
+    },
+    methods: {
+      onLoad(event, url) {
+        console.log("[IFrame] onLoad: ", {event, url});
+        this.messageList.push("[IFrame] onLoad: ", {event, url});
+      },
+      onLog(event, url, mex) {
+        console.log("[IFrame] ", mex, ": ", {event, url});
+        this.messageList.push("[IFrame] ", mex, ": ", {event, url});
+      },
+      timeout(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+    }
+  });
+</script>
+</body>
+</html>
