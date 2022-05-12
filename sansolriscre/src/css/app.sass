@@ -1,0 +1,36 @@
+/*!
+ / SPDX-License-Identifier: EUPL-1.2
+ / Copyright Regione Piemonte - 2022
+ /
+
+// app global css in Sass form
+
+// Utile solo per far caricare le variabili
+#____useless
+  color: $primary
+
+// ALTRO
+// ---------------------------------------------------------------------------------------------------------------------
+@import "./sizes"
+@import "./helpers"
+@import "./html-tags"
+@import "./quasar-overrides"
+
+
+.lms-op-unit-card
+  padding: 2px
+  cursor: pointer
+  &:hover
+    border: 2px solid rgba($lms-primary-active-color, 0.6)
+    box-shadow: 0px 0px 5px  rgba($lms-primary-active-color, 0.5)
+    -webkit-box-shadow:   0px 0px 5px  rgba($lms-primary-active-color, 0.5)
+    -moz-box-shadow:   0px 0px 5px  rgba($lms-primary-active-color, 0.5)
+    padding: 0px
+
+  &.active, &.home:hover
+    padding: 0px
+    border: 2px solid $lms-primary-active-color
+    box-shadow: 0px 0px 10px $lms-primary-active-color
+    -webkit-box-shadow:   0px 0px 10px $lms-primary-active-color
+    -moz-box-shadow:   0px 0px 10px $lms-primary-active-color
+

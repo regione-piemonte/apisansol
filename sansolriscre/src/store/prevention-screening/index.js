@@ -1,0 +1,16 @@
+/*
+ * SPDX-License-Identifier: EUPL-1.2
+ * Copyright Regione Piemonte - 2022
+ */
+
+import getters from "./getters";
+import mutations from "./mutations";
+import actions from "./actions";
+import state from "./state";
+
+export default {
+  getters,
+  mutations,
+  actions,
+  state
+};
