@@ -1,0 +1,58 @@
+/*!
+ / SPDX-License-Identifier: EUPL-1.2
+ / Copyright Regione Piemonte - 2022
+ /
+
+.lms-pre-line
+  white-space: pre-line
+
+.lms-wrap-word
+  overflow-wrap: break-word
+
+a.lms-link
+  color: $lms-link-color
+  font-weight: bold
+  text-decoration: none
+  transition: color .4s ease-in-out
+
+  &:hover
+    color: $lms-link-hover-color
+
+
+.text-lms-pink
+  color: $lms-link-hover-color
+
+.bg-lms-pink
+  background:  $lms-link-hover-color
+
+
+@-webkit-keyframes pulse
+  0%
+    -webkit-transform: scale(1, 1)
+
+  25%
+    -webkit-transform: scale(1.2, 1.2)
+
+  50%
+    -webkit-transform: scale(1, 1)
+
+  75%
+    -webkit-transform: scale(1.2, 1.2)
+
+  100%
+    -webkit-transform: scale(1, 1)
+@keyframes pulse
+  0%
+    transform: scale(1, 1)
+
+  25%
+    transform: scale(1.2, 1.2)
+
+  50%
+    transform: scale(1, 1)
+
+  75%
+    transform: scale(1.2, 1.2)
+
+  100%
+    transform: scale(1, 1)
