@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#7ECEF5;stroke-width:2;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#1E3A6D;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g>
+	<rect x="4.8" y="7.9" class="st0" width="29.9" height="24.5"/>
+	<g>
+		<line class="st0" x1="6.9" y1="29.3" x2="14.5" y2="29.3"/>
+		<line class="st0" x1="17.8" y1="29.3" x2="15.9" y2="29.3"/>
+	</g>
+	<rect x="1.9" y="5" class="st1" width="35.7" height="30.3"/>
+	<g>
+		<line class="st1" x1="19.7" y1="10.3" x2="19.7" y2="26.4"/>
+		<g>
+			<path class="st1" d="M11.4,12c0,1.6,1.8,2.9,4.1,2.9c2.3,0,4.1-1.3,4.1-2.9"/>
+			<path class="st1" d="M19.7,12c0,1.6,1.8,2.9,4.1,2.9c2.3,0,4.1-1.3,4.1-2.9"/>
+		</g>
+		<g>
+			<g>
+				<path class="st1" d="M10.2,18.3c0.8,1.2,2.5,2,4.5,2c2.8,0,5-1.6,5-3.5"/>
+			</g>
+			<g>
+				<path class="st1" d="M29.2,18.3c-0.8,1.2-2.5,2-4.5,2c-2.8,0-5-1.6-5-3.5"/>
+			</g>
+		</g>
+		<g>
+			<g>
+				<path class="st1" d="M10.2,15.5c0.8,1.2,2.5,2,4.5,2c2.8,0,5-1.6,5-3.5"/>
+			</g>
+			<g>
+				<path class="st1" d="M29.2,15.5c-0.8,1.2-2.5,2-4.5,2c-2.8,0-5-1.6-5-3.5"/>
+			</g>
+		</g>
+		<g>
+			<path class="st1" d="M11.5,22.2c0.9,0.5,2,0.7,3.2,0.7c2.8,0,5-1.4,5-3.1"/>
+			<path class="st1" d="M27.9,22.2c-0.9,0.5-2,0.7-3.2,0.7c-2.8,0-5-1.4-5-3.1"/>
+		</g>
+		<g>
+			<path class="st1" d="M19.7,27.5c0-1.4,1.1-2.6,2.5-2.6c1.4,0,2.5,1.2,2.5,2.6"/>
+			<path class="st1" d="M14.7,27.5c0-1.4,1.1-2.6,2.5-2.6c1.4,0,2.5,1.2,2.5,2.6"/>
+		</g>
+		<line class="st1" x1="18.6" y1="10.8" x2="20.8" y2="10.8"/>
+	</g>
+</g>
+</svg>
