@@ -25,15 +25,15 @@ description:
     genericName: FE Servizi Salute Regione Piemonte
     longDescription: |
       Rappresenta il Front-End dei servizi sanitari rivolti ai cittadini della
-      Regione Piemonte. 
+      Regione Piemonte. 
 
 
-      Nasce come  punto di accesso unico per consultare la propria storia
+      Nasce come  punto di accesso unico per consultare la propria storia
       clinica e per gestire i documenti e i dati che costituiscono il Fascicolo
       Sanitario Elettronico.
 
 
-      Realizzata in tecnica _PWA_, nativamente adattabile ai dispositivi sia
+      Realizzata in tecnica _PWA_, nativamente adattabile ai dispositivi sia
       mobili che desktop.
 
 
@@ -78,3 +78,4 @@ platforms:
 releaseDate: '2022-05-11'
 softwareType: standalone/iot
 url: 'https://github.com/regione-piemonte/sansol'
+softwareVersion: 1.0.0
