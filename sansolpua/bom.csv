@@ -1,0 +1,8 @@
+"module name","licenses","repository"
+"@firebase/app@0.6.9","Apache-2.0","https://github.com/firebase/firebase-js-sdk"
+"@firebase/messaging@0.6.21","Apache-2.0","https://github.com/firebase/firebase-js-sdk"
+"@quasar/extras@1.9.3","MIT","https://github.com/quasarframework/quasar"
+"animejs@3.2.0","MIT","https://github.com/juliangarnier/anime"
+"axios@0.21.1","MIT","https://github.com/axios/axios"
+"core-js@3.6.5","MIT","https://github.com/zloirock/core-js"
+"quasar@1.12.13","MIT","https://github.com/quasarframework/quasar"
