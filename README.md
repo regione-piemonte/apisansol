@@ -25,7 +25,8 @@ Al suo interno sono presenti i Front-end dei seguenti applicativi:
 - [Trova un](https://github.com/regione-piemonte/sansol/tree/main/sansoltrovaun)
 - [Vaccinazioni](https://github.com/regione-piemonte/sansol/tree/main/sansolvaccinazioni)
 - [Prevenzione Serena](https://github.com/regione-piemonte/sansol/tree/main/sansolriscre)
-
+- [Ritiro farmaci con Tessera Sanitaria](https://github.com/regione-piemonte/sansol/tree/main/sansolfarab)
+- 
 # Configurazioni iniziali
 Si rimanda ai readme delle singole componenti 
 
