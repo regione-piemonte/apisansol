@@ -27,7 +27,8 @@ Al suo interno sono presenti i Front-end dei seguenti applicativi:
 - [Prevenzione Serena](https://github.com/regione-piemonte/sansol/tree/main/sansolriscre)
 - [Ritiro farmaci con Tessera Sanitaria](https://github.com/regione-piemonte/sansol/tree/main/sansolfarab)
 - [Contatto digitale](https://github.com/regione-piemonte/sansol/tree/main/sansolcontattodigit)
-
+- [Fascicolo Sanitario Elettronico per i medici](https://github.com/regione-piemonte/sansol/tree/main/webappmed-fse)
+  
 # Configurazioni iniziali
 Si rimanda ai readme delle singole componenti 
 
