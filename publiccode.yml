@@ -78,5 +78,5 @@ platforms:
   - web
 releaseDate: '2022-05-11'
 softwareType: standalone/iot
-url: 'https://github.com/regione-piemonte/sansol'
+url: 'https://github.com/regione-piemonte/apisansol'
 softwareVersion: 1.0.0
