@@ -3,7 +3,7 @@
 Front-End dei servizi sanitari e Backend API Servizi Salute
 
 # Descrizione del prodotto
-**Componenti SANSOL** rappresenta il Front-End dei servizi sanitari rivolti ai cittadini della Regione Piemonte e il Backend API Servizi Salute.
+**Componenti SANSOL** rappresentano il Front-End dei servizi sanitari rivolti ai cittadini della Regione Piemonte e il Backend API Servizi Salute.
 
 Nasce come  punto di accesso unico per consultare la propria storia clinica e per gestire i documenti e i dati che costituiscono il Fascicolo Sanitario Elettronico.
 
