@@ -1,5 +1,9 @@
+# Prodotto
+
+Front-End dei servizi sanitari e Backend API Servizi Salute
+
 # Descrizione del prodotto
-**SANSOL** rappresenta il Front-End dei servizi sanitari rivolti ai cittadini della Regione Piemonte.
+**Componenti SANSOL** rappresenta il Front-End dei servizi sanitari rivolti ai cittadini della Regione Piemonte e il Backend API Servizi Salute.
 
 Nasce come  punto di accesso unico per consultare la propria storia clinica e per gestire i documenti e i dati che costituiscono il Fascicolo Sanitario Elettronico.
 
@@ -7,27 +11,27 @@ Realizzata in tecnica PWA, nativamente adattabile ai dispositivi sia mobili che 
 
 Al suo interno sono presenti i Front-end dei seguenti applicativi:
 
-- [Homepage](https://github.com/regione-piemonte/sansol/tree/main/sansolpua)
-- [Arruolamento](https://github.com/regione-piemonte/sansol/tree/main/sansolarruolamento) 
-- [Assistenza](https://github.com/regione-piemonte/sansol/tree/main/sansolassistenza)
-- [Buono celiachia](https://github.com/regione-piemonte/sansol/tree/main/sansolbuonoceliachia)
-- [Gestione consensi](https://github.com/regione-piemonte/sansol/tree/main/sansolconsensi)
-- [Covid-19](https://github.com/regione-piemonte/sansol/tree/main/sansolcovid19)
-- [Gestione Deleghe](https://github.com/regione-piemonte/sansol/tree/main/sansoldeleghe)
-- [Esenzioni per patologia](https://github.com/regione-piemonte/sansol/tree/main/sansolesenpat)
-- [Autocertificazione Esenzioni Reddito](https://github.com/regione-piemonte/sansol/tree/main/sansolesenred)
-- [Estratto conto](https://github.com/regione-piemonte/sansol/tree/main/sansolestrattoconto)
-- [Pagamenti](https://github.com/regione-piemonte/sansol/tree/main/sansolpagamenti)
-- [Ritiro e consultazioni documenti](https://github.com/regione-piemonte/sansol/tree/main/sansolfse)
-- [Il mio medico](https://github.com/regione-piemonte/sansol/tree/main/sansolscerev)
-- [Ricette dematerializzate](https://github.com/regione-piemonte/sansol/tree/main/sansolricette)
-- [Taccuino delle rilevazioni](https://github.com/regione-piemonte/sansol/tree/main/sansoltaccuino)
-- [Trova un](https://github.com/regione-piemonte/sansol/tree/main/sansoltrovaun)
-- [Vaccinazioni](https://github.com/regione-piemonte/sansol/tree/main/sansolvaccinazioni)
-- [Prevenzione Serena](https://github.com/regione-piemonte/sansol/tree/main/sansolriscre)
-- [Ritiro farmaci con Tessera Sanitaria](https://github.com/regione-piemonte/sansol/tree/main/sansolfarab)
-- [Contatto digitale](https://github.com/regione-piemonte/sansol/tree/main/sansolcontattodigit)
-- [Fascicolo Sanitario Elettronico per i medici](https://github.com/regione-piemonte/sansol/tree/main/webappmed-fse)
+- [Homepage](https://github.com/regione-piemonte/apisansol/tree/main/sansolpua)
+- [Arruolamento](https://github.com/regione-piemonte/apisansol/tree/main/sansolarruolamento) 
+- [Assistenza](https://github.com/regione-piemonte/apisansol/tree/main/sansolassistenza)
+- [Buono celiachia](https://github.com/regione-piemonte/apisansol/tree/main/sansolbuonoceliachia)
+- [Gestione consensi](https://github.com/regione-piemonte/apisansol/tree/main/sansolconsensi)
+- [Covid-19](https://github.com/regione-piemonte/apisansol/tree/main/sansolcovid19)
+- [Gestione Deleghe](https://github.com/regione-piemonte/apisansol/tree/main/sansoldeleghe)
+- [Esenzioni per patologia](https://github.com/regione-piemonte/apisansol/tree/main/sansolesenpat)
+- [Autocertificazione Esenzioni Reddito](https://github.com/regione-piemonte/apisansol/tree/main/sansolesenred)
+- [Estratto conto](https://github.com/regione-piemonte/apisansol/tree/main/sansolestrattoconto)
+- [Pagamenti](https://github.com/regione-piemonte/apisansol/tree/main/sansolpagamenti)
+- [Ritiro e consultazioni documenti](https://github.com/regione-piemonte/apisansol/tree/main/sansolfse)
+- [Il mio medico](https://github.com/regione-piemonte/apisansol/tree/main/sansolscerev)
+- [Ricette dematerializzate](https://github.com/regione-piemonte/apisansol/tree/main/sansolricette)
+- [Taccuino delle rilevazioni](https://github.com/regione-piemonte/apisansol/tree/main/sansoltaccuino)
+- [Trova un](https://github.com/regione-piemonte/apisansol/tree/main/sansoltrovaun)
+- [Vaccinazioni](https://github.com/regione-piemonte/apisansol/tree/main/sansolvaccinazioni)
+- [Prevenzione Serena](https://github.com/regione-piemonte/apisansol/tree/main/sansolriscre)
+- [Ritiro farmaci con Tessera Sanitaria](https://github.com/regione-piemonte/apisansol/tree/main/sansolfarab)
+- [Contatto digitale](https://github.com/regione-piemonte/apisansol/tree/main/sansolcontattodigit)
+- [Fascicolo Sanitario Elettronico per i medici](https://github.com/regione-piemonte/apisansol/tree/main/webappmed-fse)
   
 # Configurazioni iniziali
 Si rimanda ai readme delle singole componenti 
