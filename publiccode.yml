@@ -25,24 +25,24 @@ dependsOn:
 description:
   it:
     features:
-      - SANSOL: Ritiro e consultazione documenti
-      - SANSOL: Pagamenti Sanitari
-      - SANSOL: Ricette Dematerializzate
-      - SANSOL: Arruolamento al Fascicolo Sanitario
-      - SANSOL: Taccuino
-      - SANSOL: Trova un
-      - SANSOL: Prevenzione Serna
-      - SANSOL: Farmacia abituale
-      - SANSOL: Estratto conto
-      - SANSOL: Esenzioni per Reddito
-      - SANSOL: Esenzioni per Patologia
-      - SANSOL: Gestione Deleghe
-      - SANSOL: Gestione Consensi
-      - SANSOL: Profilo e gestione notifiche
-      - APISAN: PNRR
-      - APISAN: PNRR/Beneficiari/ASL
-      - APISAN: PNRR/Beneficiari/Enti Regionali
-      - APISAN: PNRR/Misura/1.4.1
+      - SANSOL - Ritiro e consultazione documenti
+      - SANSOL - Pagamenti Sanitari
+      - SANSOL - Ricette Dematerializzate
+      - SANSOL - Arruolamento al Fascicolo Sanitario
+      - SANSOL - Taccuino
+      - SANSOL - Trova un
+      - SANSOL - Prevenzione Serna
+      - SANSOL - Farmacia abituale
+      - SANSOL - Estratto conto
+      - SANSOL - Esenzioni per Reddito
+      - SANSOL - Esenzioni per Patologia
+      - SANSOL - Gestione Deleghe
+      - SANSOL - Gestione Consensi
+      - SANSOL - Profilo e gestione notifiche
+      - APISAN - PNRR
+      - APISAN - PNRR/Beneficiari/ASL
+      - APISAN - PNRR/Beneficiari/Enti Regionali
+      - APISAN - PNRR/Misura/1.4.1
       - |-
         Le API esposte da APISAN facilitano la fruibilità dei servizi sanitari
         al cittadino.
@@ -90,11 +90,8 @@ description:
 
             - i sertvizi per il contatto digitale 
     shortDescription: |-
-      Rappresenta il Front-End dei servizi sanitari rivolti ai cittadini della
-      Regione Piemonte.   Nasce come  punto di accesso unico per consultare la
-      prop
-      Backend API di orchestrazione dei servizi della Salute rivolti al
-      cittadino della Regione Piemonte
+      Rappresenta il sistema Front-End e di Back-End dei servizi sanitari rivolti ai cittadini della
+      Regione Piemonte.
 developmentStatus: stable
 intendedAudience:
   scope:
