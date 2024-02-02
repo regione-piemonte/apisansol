@@ -46,7 +46,7 @@ description:
       - |-
         Le API esposte da APISAN facilitano la fruibilità dei servizi sanitari
         al cittadino.
-    genericName: FE Servizi Salute Regione Piemonte e API per la sanità
+    genericName: FE Servizi Salute e API per la sanità
     longDescription: |
       Le componenti SANSOL rappresentano il Front-End dei servizi sanitari rivolti ai cittadini della
       Regione Piemonte. 
