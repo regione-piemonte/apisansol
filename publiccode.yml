@@ -110,7 +110,7 @@ it:
     spid: true
   riuso:
     codiceIPA: r_piemon
-landingURL: 'https://github.com/regione-piemonte/apisan.git'
+landingURL: 'https://github.com/regione-piemonte/apisansol.git'
 legal:
   authorsFile: |-
     COPYRIGHTS.md
